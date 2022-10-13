@@ -35,7 +35,27 @@ html, body, *{
 
 .child{
     width: 28%;
+    transition: all 0.3s;
 }
+
+.child:hover{
+    transform: scale(1.1);
+}
+
+.spongebob{
+    transition: 1s;
+}
+.spongebob:hover{
+    transform: rotate(360deg);
+}
+.lucifer{
+    transition: 1s;
+}
+.lucifer:hover{
+    transform: scale(.8);
+}
+    
+
 .child-1{
     border: 3px solid pink;
     height: 500px;
@@ -58,11 +78,12 @@ html, body, *{
     border-color: pink;
 }
 
-h1{
+.tv{
     text-align: center;
     font-size: 70px;
     padding-top: 30px;
     font-family: sans-serif;
+    animation: fadeIn 5s;
 }
 .office{
     width: 400px;
@@ -94,6 +115,8 @@ h1{
     flex-wrap: wrap;
     border: solid black 3px;
     box-shadow: 5px 5px 5px 5px;
+    transition: all 0.3s;
+    outline-offset: 1rem;
 }
 .theboys{
     height: 400px;
@@ -124,6 +147,26 @@ h1{
     font-size: 40px;
     
 }
+.aot{
+    
+}
+.aot:hover{
+    transform: scale(1.1);
+}
+.theboys{
+    transition: 1s;
+}
+.theboys:hover{
+    transform:skew(40deg);
+}
+.lucifer{
+    transition: 1s ;
+}
+.lufcifer:hover{
+    transform:rotate(360deg);
+}
 
-    
-    
+@keyframes fadeIn{
+    0% {opacity: 0;}
+    100% {opacity: 1}
+}
